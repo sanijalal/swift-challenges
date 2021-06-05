@@ -2,7 +2,15 @@ import XCTest
 
 struct UniqueCharacterService {
     func areCharactersUnique(_ inputString: String) -> Bool {
-        return false
+        for (index, char) in inputString.enumerated() {
+            let stringIndex = inputString.index(inputString.startIndex, offsetBy: index)
+            var stringToCut = inputString
+            stringToCut.remove(at: stringIndex)
+            if stringToCut.contains(char) {
+                return false
+            }
+        }
+        return true
     }
 }
 
