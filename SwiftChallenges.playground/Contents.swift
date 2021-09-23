@@ -21,6 +21,7 @@ assert(CheckStringsContainSameCharacters.check("a1 b2", withText: "b1 a2") == tr
 assert(CheckStringsContainSameCharacters.check("abc", withText: "abca") == false)
 assert(CheckStringsContainSameCharacters.check("abc", withText: "Abc") == false)
 
+// Lettercase Ignore Comparison
 let stringToCheck = "Ayam Percik"
 assert(stringToCheck.lettercaseignoreContains("percik") == true)
 assert(stringToCheck.lettercaseignoreContains("cekodok") == false)
