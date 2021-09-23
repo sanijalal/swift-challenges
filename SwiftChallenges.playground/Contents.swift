@@ -14,4 +14,10 @@ assert(CheckPalindromeService.check("rotator") == true)
 assert(CheckPalindromeService.check("Rats live on no evil star") == true)
 assert(CheckPalindromeService.check("Never odd or even") == false)
 
+// Do two strings contain the same characters?
+assert(CheckStringsContainSameCharacters.check("abca", withText: "abca") == true)
+assert(CheckStringsContainSameCharacters.check("abc", withText: "cba") == true)
+assert(CheckStringsContainSameCharacters.check("a1 b2", withText: "b1 a2") == true)
+assert(CheckStringsContainSameCharacters.check("abc", withText: "abca") == false)
+assert(CheckStringsContainSameCharacters.check("abc", withText: "Abc") == false)
 
