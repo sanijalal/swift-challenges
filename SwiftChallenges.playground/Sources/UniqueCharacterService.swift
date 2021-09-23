@@ -1,5 +1,7 @@
 import Foundation
 
+// Poor implementation of finding if characters are unique.
+// This is an O(n) function.
 public struct UniqueCharacterService {
    public func areCharactersUnique(_ inputString: String) -> Bool {
         for (index, char) in inputString.enumerated() {
